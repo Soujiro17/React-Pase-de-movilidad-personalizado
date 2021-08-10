@@ -1,0 +1,160 @@
+@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-popups/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-calendars/styles/material.css";
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-rows: 5vh 1fr;
+  grid-template-areas: "header header" "user pdf";
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  background: #fff;
+}
+
+.user-info {
+  grid-area: user;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-container {
+  grid-area: header;
+  background: #eee;
+  h1 {
+    margin: 0%;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pdf-viewer {
+  grid-area: pdf;
+  border-left: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control {
+  background: #fff;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+p {
+  margin: 0%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pase {
+  width: 450px;
+  height: 250px;
+  max-width: 450px;
+  max-height: 250px;
+  border: 1px solid #555;
+  border-radius: 5px;
+}
+
+.front {
+  margin-bottom: 30px;
+  position: relative;
+  background-size: cover;
+}
+
+.left-back {
+  width: 35%;
+  height: 100%;
+  padding: 5px;
+}
+
+.back {
+  display: flex;
+  background: #fff;
+}
+
+.right-back {
+  width: 65%;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.codigo-qr {
+  width: 150px;
+  height: 150px;
+}
+
+.right-back p {
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.right-back h6 {
+  font-size: 15px;
+  font-weight: normal;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.right-back p:last-child {
+  font-size: 9px;
+  font-weight: normal;
+  text-align: justify;
+  position: absolute;
+  max-width: 100%;
+  bottom: 3px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+.logo-mevacuno {
+  width: 100px;
+  height: 75px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+.e-input-group.e-control-wrapper.e-date-wrapper {
+  width: 80% !important;
+}
+
+.info-center {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 550px) {
+  .main-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "header" "user" "pdf";
+  }
+
+  .user-info {
+    padding: 10px;
+    border-bottom: 1px solid #000;
+  }
+
+  .pdf-viewer {
+    padding: 10px;
+    max-width: 100%;
+  }
+}

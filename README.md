@@ -1,3 +1,11 @@
+# Introducción
+
+El proyecto está enfocado en una página web desarrollada en ReactJS para crear pases de movilidad personalizados (Chile). Cabe destacar que es HTML y SCSS puro. Para la transformación a pdf se utilizó el módulo [kendo-react-pdf](https://www.npmjs.com/package/@progress/kendo-react-pdf)
+
+# Link de prueba
+
+<https://pase-de-movilidad-personalizad.herokuapp.com/>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
